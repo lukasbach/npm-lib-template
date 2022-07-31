@@ -1,7 +1,7 @@
 {
-  "name": "npm-lib-template",
+  "name": "$packagename$",
   "version": "0.0.1",
-  "description": "npm-lib-template",
+  "description": "$packagename$ library",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "esnext": "lib/esnext/index.js",
@@ -18,18 +18,19 @@
     "build:esnext": "tsc -m esnext --outDir lib/esnext",
     "build:types": "tsc -m commonjs --declaration --emitDeclarationOnly --outDir lib/types",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepublish": "yarn build && yarn lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lukasbach/npm-lib-template.git"
+    "url": "git+https://github.com/lukasbach/$packagename$.git"
   },
   "author": "Lukas Bach <npm@lukasbach.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lukasbach/npm-lib-template/issues"
+    "url": "https://github.com/lukasbach/$packagename$/issues"
   },
-  "homepage": "https://github.com/lukasbach/npm-lib-template#readme",
+  "homepage": "https://github.com/lukasbach/$packagename$#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
