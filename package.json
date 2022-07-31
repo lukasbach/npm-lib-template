@@ -6,6 +6,7 @@
   "module": "lib/esm/index.js",
   "esnext": "lib/esnext/index.js",
   "typings": "lib/types/index.d.ts",
+  "sideeffects": [],
   "files": [
     "lib",
     "src"
